@@ -62,7 +62,6 @@ export class LoginPage implements OnInit {
   }
 
 
-
   gotoSignUp(){
     this.router.navigateByUrl('/register');
   }

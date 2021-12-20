@@ -1,3 +1,4 @@
+import { BackButtonServiceService } from './service/back-button-service.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private BackButtonServiceService:BackButtonServiceService) {
+    this.BackButtonServiceService.init();
+  }
 }
