@@ -1,7 +1,6 @@
 # ni-demo
 
 (Its not complete ionic project. Its src folder only.)
-(con- ExitApp fun. not added)
 
 functionality : 1. Login and registration using firebase Auth
               2. Google captcha 
