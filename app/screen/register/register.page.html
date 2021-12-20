@@ -1,0 +1,33 @@
+<ion-content>
+
+  <div class="wrapper">
+  
+    <h1 style="font-size:14vw">Sign Up</h1>
+    <h4>Create account</h4>
+
+    <ion-item lines = 1>
+      <ion-label position="floating" id="name" >Name</ion-label>
+      <ion-input type="text" [(ngModel)]= "UserInfo.name"></ion-input>
+    </ion-item>
+
+    <ion-item lines = 1>
+      <ion-label position="floating" >Email</ion-label>
+      <ion-input type="text" [(ngModel)]= "UserInfo.email"></ion-input>
+    </ion-item>
+
+    <ion-item lines = 1>
+      <ion-label position="floating" >Password</ion-label>
+      <ion-input type="text" [(ngModel)]= "UserInfo.password"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="CreateAcc()">Sign Up</ion-button>
+ 
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div class="footer" (click)= "gotoSignIn()">
+    <h4 style="color: rgba(85, 85, 92, 0.774);">Already,have an account? Sign In.</h4>
+  </div>
+</ion-footer>

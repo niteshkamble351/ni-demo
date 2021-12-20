@@ -1,0 +1,39 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+
+  <div class="wrapper">
+    <h1 style="font-size:8vw">Hello, <br> Welcome Back!</h1>
+    <h4>Login to continue</h4>
+
+    <ion-item lines = 1>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item lines = 1>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="text" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <form [formGroup]="aFormGroup">
+      <ngx-recaptcha2 #captchaElem
+        [siteKey]= siteKey
+        formControlName="recaptcha">
+      </ngx-recaptcha2>
+    </form>
+
+    <ion-button [disabled]="!aFormGroup.valid" (click)="SignIn()">Sign In</ion-button>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div (click)= "gotoSignUp()">
+    <h4 style="color: rgba(85, 85, 92, 0.774);">Create an Account Instead.</h4>
+  </div>
+</ion-footer>

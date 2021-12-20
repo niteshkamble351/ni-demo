@@ -1,0 +1,48 @@
+.wrapper{
+    width: 90%;
+    margin: 10% auto;
+    position: relative;
+    justify-content: center;
+}
+
+ion-item{
+    margin: 5% auto 3%;
+    --background:#e6e6e6;
+    border-radius: 8px;
+}
+
+ion-button:active{
+    --background: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    margin: 4% auto 3%;
+    width: 100%;
+}
+
+ion-button{
+    --background: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    margin: 4% auto 3%;
+    width: 100%;
+}
+ion-button:disabled{
+    --background:#e6e6e6;
+    margin: 4% auto 3%;
+    width: 100%;
+}
+
+h1{
+    
+    padding: 0%;
+    width: max-content;
+    color: aqua;
+    text-align: center;
+    
+}
+
+h4{
+    color: rgba(92, 97, 97, 0.705);
+}
+
+ion-footer{
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+}
